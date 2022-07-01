@@ -1,7 +1,7 @@
 /**
  * ArrayPractice by Team BossCoders
- * First Last
- * collaborators: First Last, First Last
+ * Ben Eckley
+ * collaborators: Jihae Park, Ben Eckley, Aasine Cassara, Elizabeth Rechtin
  */
 
 /**
@@ -62,7 +62,10 @@ public class ArrayPractice
   public static int[] buildIncreasingArray( int size, int startValue, int step )
   {
     int[] data = new int[size];
-
+    data[0] = startValue;
+    for(int i = 1; i < size; i++){
+        data[i] = data[i-1] + step;
+    }
     // loop through each element of the array and
     /* YOUR BRILLIANT CODE HERE */
 
@@ -86,9 +89,10 @@ public class ArrayPractice
   {
     Random r = new Random();
     int[] data = new int[size];
-
-    /* YOUR BRILLIANT CODE HERE */
-
+    for( int i = 0; i < data.length; i++){
+        data[i] = r.nextInt(maxValue);
+    }
+     
     return data;
   }
 
@@ -108,7 +112,10 @@ public class ArrayPractice
   */
   public static void printArray( int[] data )
   {
-    /* YOUR BRILLIANT CODE HERE */
+     for (int i = 0; i < data.length; i++){
+            System.out.print(data[i] + " ");
+        }
+        System.out.println("");
   }
 
 
@@ -128,10 +135,13 @@ public class ArrayPractice
   */
   public static int firstOccurence( int[] data, int value )
   {
-
-    /* YOUR BRILLIANT CODE HERE */
-
-    return 0; // change this (it is just a placeholder to "get past" the compiler)
+    for(int i = 0; i < data.length; i++){
+        if (data[i] == value){
+            return i;
+        }
+    }
+      
+    return -1; // change this (it is just a placeholder to "get past" the compiler)
   }
 
 
@@ -146,9 +156,12 @@ public class ArrayPractice
   */
   public static int arraySum( int[] data )
   {
-    /* YOUR BRILLIANT CODE HERE */
+    int sum = 0;
+    for(int i = 0; i < data.length; i++){
+        sum += data[i];
+    } 
 
-    return 0; // replace this
+    return sum; // replace this
   }
 
 
@@ -182,11 +195,14 @@ public class ArrayPractice
      value of the largest element in the array
   */
   public static int findMaxValue( int[] data ) {
-    int m;  // will hold the maximum value;
+    int max = data[0];  // will hold the maximum value;
+    for(int i = 1; i < data.length; i++){
+        if (data[i] > max){
+            max = data[i];
+        }
+    }
 
-    /* YOUR BRILLIANT CODE HERE */
-
-    return m;
+    return max;
   }
 
 
@@ -201,7 +217,7 @@ public class ArrayPractice
      will be 3 since three of the elements are odd.
   */
   public static int countOdds( int[] data ) {
-    int count;
+    int count = 0;
 
     /* YOUR BRILLIANT CODE HERE */
 
@@ -238,11 +254,16 @@ public class ArrayPractice
     // remove the comments as you complete each routine
     // and add more lines as you add additional routines.
 
-    // int[] data = buildRandomArray(10, 20);
+    int[] data = buildRandomArray(5, 10);
+    
     // int[] data2 = buildIncreasingArray(10,5,3);
-    // printArray(data);
+    printArray(data);
+    System.out.println("The sum of the integers in the array is " + arraySum(data) + ".");
+    System.out.println("The first occurrence of 3 in the array is in the index of " + firstOccurence(data, 3) + ".");
+    System.out.println("The largest number in the array is " + findMaxValue(data) + ".");
+    printArray(buildIncreasingArray(5,3,2));
     // printArray(data2);
 
     // add calls to show that the methods you write work.
   }
-}
+}; 
