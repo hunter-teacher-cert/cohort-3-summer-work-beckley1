@@ -75,9 +75,12 @@ public class Array2DPractice
        for(int w = 0; w < board [i].length; w++)
        {
             System.out.print(board[i] [w]);
+       
         }
-        System.out.println("");
-  }
+        System.out.println(" ");
+  }   
+     System.out.println(" ");}
+
 
 //   /**
 //      Parameters:
@@ -116,7 +119,7 @@ public class Array2DPractice
   public static char[][] copyBoard( char[][] original )
   {
     char[][] copy = new char[original.length][original[0].length];
-    for(int=0; i , original.length; i++){
+    for(int i=0; i < original.length; i++){
       for(int j=0; j<original[0].length; j++){
         copy[i][j] = original[i][j];
       }
@@ -164,7 +167,15 @@ public class Array2DPractice
 //   */
   public static void explodeSquare( char[][] board, int row, int col )
   {
-    /* YOUR AWESOME CODE HERE */
+     for (int i = row-1; i <= row+1; i++){
+       for(int w = col-1; w <= col+1; w++)
+       {
+         board[i][w] = 'X';
+           // System.out.print(board[i] [w]);
+       
+        }
+      
+  } 
   }
 
 //   /**
@@ -237,12 +248,20 @@ public class Array2DPractice
 //   public static void downString( char[][] board, int row, int col, String word )
 //   {
 //     /* YOUR AWESOME CODE HERE */
-  }
+
+
   public static void main( String[] args )
   {
     char[][] b = buildBoard(5,10,'z');
+    b[1][1] = 'a';
+        b[1][2] = 'b';
+        b[0][1] = 'c';
+        b[2][3] = 'd';
+    
     printBoard(b);
-    copyBoard(c);
+    char [][] c = copyBoard(b);
+    printBoard(c);
+    printBoard(explodeSquare(b, 1, 2));
     /*
       Note, you can directly set elements in the board
       using array notation like b[3][2]='z' and you
