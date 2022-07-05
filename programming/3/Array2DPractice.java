@@ -170,12 +170,17 @@ public class Array2DPractice
      for (int i = row-1; i <= row+1; i++){
        for(int w = col-1; w <= col+1; w++)
        {
-         board[i][w] = 'X';
+         if(i==row && w ==col){
+           continue;
+         }else{
+        
+         board[i][w]  = 'X';
            // System.out.print(board[i] [w]);
        
         }
       
   } 
+  }
   }
 
 //   /**
@@ -196,10 +201,11 @@ public class Array2DPractice
 
 //      explodeAllchar(board,'z') will change board to:
 //   */
-//   public static void explodeAllChar(char[][] board, char c)
-//   {
-//     /* YOUR AWESOME CODE HERE */
-//   }
+  public static void explodeAllChar(char[][] board, char c)
+  {
+    /* YOUR AWESOME CODE HERE */
+    
+  }
 
 
 //   /**
@@ -261,7 +267,8 @@ public class Array2DPractice
     printBoard(b);
     char [][] c = copyBoard(b);
     printBoard(c);
-    printBoard(explodeSquare(b, 1, 2));
+    explodeSquare(b, 1, 2);
+    printBoard(b);
     /*
       Note, you can directly set elements in the board
       using array notation like b[3][2]='z' and you
