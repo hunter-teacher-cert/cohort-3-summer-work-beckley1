@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * Conway's Game of Life Team AreWeSentientYet?
- * First Last
+ * Ben Eckley
  * collaborators: First Last, First Last
  */
 
@@ -29,55 +29,57 @@ public class Cgol
   //create, initialize, and return  empty board (all cells dead)
   public static char[][] createNewBoard( int rows, int cols )
   {
-
-  }
-
-
-  //print the board to the terminal
-  public static void printBoard( char[][] board )
-  {
-
-  }
+  char [][] board = new char[rows][cols];
+    return board;
+    
+    }
 
 
-  //set cell (r,c) to val
-  public static void setCell( char[][] board, int r, int c, char val )
-  {
+  // //print the board to the terminal
+  // public static void printBoard( char[][] board )
+  // {
 
-  }
-
-
-  //return number of living neigbours of board[r][c]
-  public static int countNeighbours( char[][] board, int r, int c )
-  {
-
-  }
+  // }
 
 
-  /**
-     precond: given a board and a cell
-     postcond: return next generation cell state based on CGOL rules
-     (alive 'X', dead ' ')
-  */
-  public static char getNextGenCell( char[][] board,int r, int c )
-  {
+  // //set cell (r,c) to val
+  // public static void setCell( char[][] board, int r, int c, char val )
+  // {
 
-  }
+  // }
 
 
-  //generate and return a new board representing next generation
-  public static char[][] generateNextBoard( char[][] board )
-  {
+  // //return number of living neigbours of board[r][c]
+  // public static int countNeighbours( char[][] board, int r, int c )
+  // {
 
-  }
+  // }
+
+
+  // /**
+  //    precond: given a board and a cell
+  //    postcond: return next generation cell state based on CGOL rules
+  //    (alive 'X', dead ' ')
+  // */
+  // public static char getNextGenCell( char[][] board,int r, int c )
+  // {
+
+  // }
+
+
+  // //generate and return a new board representing next generation
+  // public static char[][] generateNextBoard( char[][] board )
+  // {
+
+  // }
 
 
   public static void main( String[] args )
   {
-    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   
     char[][] board;
     board = createNewBoard(25,25);
-
+ /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //breathe life into some cells:
     setCell(board, 0, 0, 'X');
     setCell(board, 0, 1, 'X');
