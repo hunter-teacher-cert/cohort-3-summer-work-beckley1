@@ -27,19 +27,32 @@ public class Cgol
 {
 
   //create, initialize, and return  empty board (all cells dead)
-  public static char[][] createNewBoard( int rows, int cols )
+  public static char[][] createNewBoard( int rows, int cols, char value )
   {
   char [][] board = new char[rows][cols];
-    return board;
+    for (int x = 0; x < rows; x++){
+      for (int y = 0; y < cols; y++){
+        board[x][y] = value;
+      }
+    }
+      
+         return board;
     
     }
 
 
   // //print the board to the terminal
-  // public static void printBoard( char[][] board )
-  // {
-
-  // }
+  public static void printBoard( char[][] board )
+  {
+     for (int x = 0; x < board.length; x++){
+       for(int y = 0; y < board [x].length; y++)
+       {
+            System.out.print(board[x] [y]);
+       
+        }
+        System.out.println(" ");
+  }   
+     System.out.println(" ");}
 
 
   // //set cell (r,c) to val
@@ -78,7 +91,8 @@ public class Cgol
   {
    
     char[][] board;
-    board = createNewBoard(25,25);
+    board = createNewBoard(25,25, 'x');
+    printBoard(board);    
  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     //breathe life into some cells:
     setCell(board, 0, 0, 'X');
