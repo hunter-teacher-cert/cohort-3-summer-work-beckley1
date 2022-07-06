@@ -250,12 +250,12 @@ public class Array2DPractice
 //      xxxRxx
 
 //      Note that the method has to stop at the bottom of the array.
-//   */
-//   public static void downString( char[][] board, int row, int col, String word )
-//   {
-//     /* YOUR AWESOME CODE HERE */
+  
+  public static void downString( char[][] board, int row, int col, String word )
+  {
+    /* YOUR AWESOME CODE HERE */
 
-
+  }
   public static void main( String[] args )
   {
     char[][] b = buildBoard(5,10,'z');
