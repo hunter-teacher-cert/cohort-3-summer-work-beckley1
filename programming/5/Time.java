@@ -137,9 +137,22 @@ public class Time {
     public int compareTo(Time other){
 	// your code here)
 
-	return 0; // change this
-    }
-    
+    public int compareTo(Time other){
+	// your code here)
+      if (hours == other.hours &&
+      minutes == other.minutes &&
+      seconds == other.seconds){
+        return 0;
+      }
+	    else if(
+        (hours > other.hours) ||
+        (hours == other.hours && minutes > other.minutes) ||
+        (hours == other.hours && minutes == other.minutes && seconds > other.seconds)){
+        return 1;
+      }else{
+        return -1;
+      }// change this
+    }   
 
     
 }//end class
