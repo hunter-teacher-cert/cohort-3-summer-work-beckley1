@@ -4,8 +4,8 @@ import java.util.*;
 
 /**
  * Time class by Team LucidThinkeren
- * Mike Randazzo
- * collaborators: Maxwell Yearwood, Ben Eckley, Qianhui Vanessa Zou
+ * Ben Eckley
+ * collaborators: Maxwell Yearwood, Mike Randazzo, Qianhui Vanessa Zou
  */
 
 /**
