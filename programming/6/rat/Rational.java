@@ -1,7 +1,7 @@
 /**
  * Rational class by Team BangPi
- * First Last
- * collaborators: First Last, First Last
+ * Usman Ahmed
+ * collaborators: First Last, First Last Yeidy Levels, Parmanand Mohanlall
  */
 
 
@@ -9,20 +9,16 @@
    class Rational
    An instance of this class will represent a rational number (p/q s.t. p,q ints && q!=0),
    and facilitate mathematical operations with another instance of class Rational.
-
    Basic level (complete all):
-   - toString
-   - default constructor
+   + toString
+   + default constructor
    - multiply
    - divide
-
    Intermediate level (complete Basic methods plus these methods):
    - floatValue
    - overloaded constructor
-
    Advanced level (complete Basic + Intermediate + these methods):
    -
-
 */
 
 
@@ -37,7 +33,8 @@ public class Rational
   // creates a new Rational with value 0/1
   public Rational()
   {
-    /* YOUR ELEGANT CODE HERE */
+    this._numerator = 0;
+    this._denominator = 1;
   }
 
 
@@ -46,7 +43,14 @@ public class Rational
   // if an invalid denominator is attempted, should print a message and set the number to 0/1
   public Rational( int n, int d )
   {
-    /* YOUR ELEGANT CODE HERE */
+    this._numerator = n;
+    this._denominator = d;
+    if(d==0)
+    {
+     System.out.println("This is an invalid response");
+      this._numerator = 0;
+      this._denominator = 1;
+    }
   }
 
 
@@ -54,7 +58,7 @@ public class Rational
   // returns a string representation of the rational number (formatting of your choice)
   public String toString()
   {
-    /* YOUR ELEGANT CODE HERE */
+	return("The rational number is " + this._numerator + "/" + this._denominator);
   }
 
 
@@ -63,7 +67,7 @@ public class Rational
   // uses the most precise floating point primitive
   public double floatValue()
   {
-    /* YOUR ELEGANT CODE HERE */
+    return 0.0;
   }
 
 
@@ -75,7 +79,8 @@ public class Rational
   // need not reduce
   public void multiply( Rational r )
   {
-    /* YOUR ELEGANT CODE HERE */
+    this._numerator = this._numerator * r._numerator;
+    this._denominator = this._denominator * r._denominator;
   }
 
 

@@ -27,10 +27,11 @@ public class Driver {
 
 	//assign var the address of a newly-apportioned Time object
 	t = new Time(2, 38, 20);
-  System.out.println(t);
+  System.out.println(t.toString());
+  String temp = t+"!";
   // t.set(2,42, 57);
   // System.out.println(t); 
-  Time ot1 = new Time(2, 38 ,20);
+  Time ot1 = new Time(2, 38 ,10);
   
   //t.add(ot);
   System.out.println(t.isEquals(ot1));    
