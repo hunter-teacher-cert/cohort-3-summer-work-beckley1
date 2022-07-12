@@ -40,10 +40,10 @@ public class Time {
     int seconds;
 
     // Constructors
-    public Time(){
-	this.hours = 0;
-	this.minutes = 0;
-	this.seconds = 0;
+  public Time(){
+	  this.hours = 0;
+	  this.minutes = 0;
+	  this.seconds = 0;
 	
     }
 
