@@ -64,12 +64,12 @@ public class AlPractice{
     //creates variable of running total 
     int sum = 0;
     
-    //create loop to add elements for sum
-    //              dataList.size here is a method
-    for (int i = 0; i < dataList.size(); i++) {
-      sum = sum + dataList.get(i);
-    //placeholder to compile. Would this be returning sum?
-  }
+
+    
+    for (int i = 0; i < dataList.size(); i++)     //create loop to add elements for sum
+    {
+      sum = sum + dataList.get(i);//dataList.size and datalist.get are methods
+    }
     return sum;
   }
 
