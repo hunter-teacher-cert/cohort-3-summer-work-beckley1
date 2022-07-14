@@ -1,7 +1,7 @@
 /**
  * Rational class by Team BangPi
- * Usman Ahmed
- * collaborators: First Last, First Last Yeidy Levels, Parmanand Mohanlall
+ * Ben Eckley
+ * collaborators: Usman Ahmed, Yeidy Levels, Parmanand Mohanlall
  */
 
 
@@ -76,7 +76,7 @@ public class Rational
   // does not return a value
   // modifies this object
   // does not modify input
-  // need not reduce
+  // doesn't need to be reduced
   public void multiply( Rational r )
   {
     this._numerator = this._numerator * r._numerator;
