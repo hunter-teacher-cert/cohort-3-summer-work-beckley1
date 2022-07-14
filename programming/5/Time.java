@@ -40,10 +40,10 @@ public class Time {
     int seconds;
 
     // Constructors
-  public Time(){
-	  this.hours = 0;
-	  this.minutes = 0;
-	  this.seconds = 0;
+    public Time(){
+	this.hours = 0;
+	this.minutes = 0;
+	this.seconds = 0;
 	
     }
 
@@ -136,9 +136,6 @@ public class Time {
     */
     public int compareTo(Time other){
 	// your code here)
-
-    public int compareTo(Time other){
-	// your code here)
       if (hours == other.hours &&
       minutes == other.minutes &&
       seconds == other.seconds){
@@ -153,6 +150,4 @@ public class Time {
         return -1;
       }// change this
     }   
-
-    
 }//end class

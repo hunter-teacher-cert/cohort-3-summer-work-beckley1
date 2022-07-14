@@ -1,6 +1,6 @@
 /**
  * nth Fibonacci number generator by Team SumEmIfYaGotEm
- * First Last
+ * Ben Eckley
  * collaborators: First Last, First Last
  */
 
@@ -34,7 +34,7 @@ public class Fib
       //now go big:
       System.out.println( fib(10) ); // -> 55
       System.out.println( fib(20) ); // -> 6765
-      System.out.println( fib(40) ); // -> 10233415
+      System.out.println( fib(40) ); // -> 102334155
 
   }//end main()
 
