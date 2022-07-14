@@ -266,7 +266,7 @@ public class Array2DPractice
     
     printBoard(b);
     char [][] c = copyBoard(b);
-    printBoard(c);
+    printBoard(c);//should print same as printing b
     explodeSquare(b, 1, 2);
     printBoard(b);
     /*
