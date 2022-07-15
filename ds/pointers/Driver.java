@@ -39,14 +39,19 @@ public class Driver{
 	// Add a line to set the walker variable defined above
 	// so that it points to (refers to) the same node as
 	// the variable front points to.
+  walker = front;
 	
 	// Uncomment the next line, compile and run
 	// to test what you just added
-	//System.out.println(walker.getData());
+  System.out.println(walker.getData());
 
 	// Add the code necessary
 	// to set up a loop that
 	// 1. prints out what is in walker.data()
+  while(walker != null){
+    System.out.print(walker);
+    walker = walker.getNext();
+  }
 	// 2. moves walker to point to the next node
 	// 3. loops until walker gets to null
 	
