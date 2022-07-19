@@ -38,7 +38,7 @@ public class LinkedList{
   Parameters:
   value - the new string to add to the list
 
-  Adds a new node containing value to the front of the list.
+  Adds a new node containing value to ONLY the front of the list.
   */
   public void add(String value){ //val
     Node front;//declares variable called front
@@ -119,12 +119,35 @@ public class LinkedList{
   "a"-> "z" -> "b" -> "c" -> "d"
 
   */
-  public void add(int index, String value){
+  //l.add(“something”) <automatically goes to the beginning based on first add method
+  //ladd(3,"something”) <-- inserts into that #
+
+  public void add(int index, String value){ //
+    if (index == 0) {
+      add(value);
+      
+    }
+    else {
+    //for loop to walk to the correct place in order to insert the new value
+    Node walker = head;
+    Node zed = new Node(value);
     
-
+    
+    for (int i = 0; i < index-1; i++){
+      walker = walker.getNext();//traverses nodes
+      
+      {zed.setNext(walker.getNext());//point to b
+      walker.setNext(zed);//need walker to point ?
+      //ben do you want to test this? 
+     
+         
+         
+  
+    }
   }
-
-
+//add(3,"chicken")//insert between c and d
+  //point to d
+  //point c to chicken
   /**
   Returns the index (location) of the first node in the list
   that contains value.
@@ -135,9 +158,10 @@ public class LinkedList{
   indexOf("d") would return 3 since "d" is at location 3.
 
   */
-  public int indexOf(String value){
-    return 0;
-  }
+   // public int indexOf(String value){
+   //  return 0;
+   //  }
+
 
 
   /**
@@ -147,10 +171,10 @@ public class LinkedList{
   It should then copy all of the values to the array and return
   the array.
 
-  */
-  public String[] toArray(){
-    return null;
-  }
+  // */
+  // public String[] toArray(){
+  //   return null;
+  // }
 
 
 
@@ -164,7 +188,10 @@ public class LinkedList{
 
   remove(2) results in:
   "a"->"b"->"d"->"e"
-  */
-  public void remove(int index){
-  }
+  // */
+  // public void remove(int index){
+  // }
 }
+    }
+  }
+
