@@ -189,6 +189,6 @@ public class LinkedList{
   remove(2) results in:
   "a"->"b"->"d"->"e"
   */
-  public void remove(int index){
-  }
-    }
+  // public void remove(int index){
+  // }
+  //   }
