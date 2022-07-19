@@ -135,15 +135,16 @@ public class LinkedList{
     
     for (int i = 0; i < index-1; i++){
       walker = walker.getNext();//traverses nodes
-      
-      {zed.setNext(walker.getNext());//point to b
+    }
+      zed.setNext(walker.getNext());//point to b
       walker.setNext(zed);//need walker to point ?
       //ben do you want to test this? 
-     
+       //trying to figure out print statement to do
+           
          
          
   
-    }
+    
   }
 //add(3,"chicken")//insert between c and d
   //point to d
@@ -158,10 +159,9 @@ public class LinkedList{
   indexOf("d") would return 3 since "d" is at location 3.
 
   */
-   // public int indexOf(String value){
-   //  return 0;
-   //  }
-
+  //public int indexOf(String value){
+    //return 0;
+  }
 
 
   /**
@@ -171,10 +171,10 @@ public class LinkedList{
   It should then copy all of the values to the array and return
   the array.
 
-  // */
-  // public String[] toArray(){
-  //   return null;
-  // }
+  */
+  //public String[] toArray(){
+    //return null;
+  }
 
 
 
@@ -188,10 +188,7 @@ public class LinkedList{
 
   remove(2) results in:
   "a"->"b"->"d"->"e"
-  // */
-  // public void remove(int index){
-  // }
-}
-    }
+  */
+  public void remove(int index){
   }
-
+    }
