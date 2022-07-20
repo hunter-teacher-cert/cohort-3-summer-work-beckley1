@@ -98,7 +98,19 @@ public class SortSearch{
        
     */
     public void sort(){
-
+  {
+      int temp;
+      int smallestIndex;
+      
+      for (int i = 0; i<this.data.size(); i++)
+      {
+        smallestIndex = findSmallestIndex(i);
+      
+        temp = this.get(i);
+        data.set(i, this.get(smallestIndex));
+        data.set(smallestIndex,temp);
+      }
+    }
 
     }
 
@@ -113,7 +125,17 @@ public class SortSearch{
        until either the element is found or you've looked at all the elements.
        This algorithm works on any ArrayList.
     */
-    public int linearSearch(int value){
+	
+ public int linearSearch(int value)
+    {
+      for(int i = 0; i < data.size(); i++)
+      {
+        if (data.get(i) == value)
+        {
+          return i;
+        }
+        
+      } // ends the for loop
 	
 	
 	    return 0; // replace this return
