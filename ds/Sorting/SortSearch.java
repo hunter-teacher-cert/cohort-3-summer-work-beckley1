@@ -138,7 +138,7 @@ public class SortSearch{
       } // ends the for loop
 	
 	
-	    return 0; // replace this return
+	    return -1; // replace this return
     }
     
     /**
